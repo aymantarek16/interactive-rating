@@ -1,0 +1,149 @@
+/* =========================== Font Size usable =========================== */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/* =========================== Global Reset =========================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  background: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================== Container Section =========================== */
+.container {
+  width: 350px;
+  height: 360px;
+  max-width: 90%;
+  background: hsl(213, 19%, 18%);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.1);
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================== Rating Section =========================== */
+.rating .star {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(44, 53, 66, 0.847);
+}
+
+.rating h2 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.rating p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+.rating .list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.rating .list li {
+  list-style: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(44, 53, 66, 0.847);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.rating .list li:hover {
+  background: hsl(25, 97%, 53%);
+}
+
+.rating .list li.active {
+  background: hsl(25, 97%, 53%);
+}
+
+.rating button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 17px;
+  border: none;
+  background: hsl(25, 97%, 53%);
+  letter-spacing: 3px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rating button:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+/* =========================== ThankYOu Section =========================== */
+
+.thankYou {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  text-align: center;
+}
+
+.thankYou img {
+  width: 140px;
+  height: 95px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.thankYou span {
+  background: rgba(44, 53, 66, 0.847);
+  color: hsl(25, 97%, 53%);
+  padding: 5px 0;
+  border-radius: 20px;
+  width: 70%;
+  margin: 10px auto 20px;
+  font-size: 14px;
+}
+.thankYou p {
+  margin-top: 20px;
+  font-size: 12px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+.thankYou {
+  display: none;
+}
+
+/* =========================== Media Query =========================== */
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 15px 20px;
+  }
+
+  .rating button {
+    font-size: 15px;
+  }
+}
