@@ -18,6 +18,9 @@ body {
   align-items: center;
 }
 
+button:disabled {
+  cursor: not-allowed !important ;
+}
 /* =========================== Container Section =========================== */
 .container {
   width: 360px;
