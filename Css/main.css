@@ -20,8 +20,8 @@ body {
 
 /* =========================== Container Section =========================== */
 .container {
-  width: 350px;
-  height: 360px;
+  width: 360px;
+  height: 370px;
   max-width: 90%;
   background: hsl(213, 19%, 18%);
   color: #fff;
@@ -45,7 +45,7 @@ body {
   background: rgba(44, 53, 66, 0.847);
 }
 
-.rating h2 {
+.rating h1 {
   margin-bottom: 15px;
   font-size: 25px;
 }
@@ -68,6 +68,7 @@ body {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  font-size: 16px;
   cursor: pointer;
   background: rgba(44, 53, 66, 0.847);
   display: flex;
@@ -86,7 +87,7 @@ body {
 
 .rating button {
   width: 100%;
-  padding: 12px 0;
+  padding: 10px 0;
   font-size: 17px;
   border: none;
   background: hsl(25, 97%, 53%);
